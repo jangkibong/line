@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+#wrap{
+    font-family: '나눔고딕' ;
+}
+
+header{
+    height: 70px;
+    
+}
+header>div{
+    display: block;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 4px solid #000;
+    z-index: 200;
+}
+header>div>nav{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    width: 960px;
+    height: 66px;
+}
+header>div>nav>h1{
+    width: 60px;
+    height: 21px;
+    margin-right: 18px;
+    text-indent: -9999px;
+    background-image: url(./../images/logo160629.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header>div>nav>.gnb{
+    display: flex;
+}
+
+header>div>nav>.gnb>li:nth-of-type(1):before{
+    display: none;
+
+}
+header>div>nav>.gnb>li:before{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin: 0 12px;
+    background-color: #dedede;
+    content: '';
+}
+header>div>nav>.gnb>li.on>a{
+    font-weight: 600;
+}
+header>div>nav>.gnb>li>a{
+    color: #444444;
+    font-size: 11.5px;
+}
+header>div>nav.on>.lang{
+    overflow: visible;
+}
+
+header>div>nav>.lang{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    height: 24px;
+    line-height: 22px;
+}
+
+header>div>nav>.lang>h2{
+    position: relative;
+    width: 130px;
+    font-weight: 400;
+    font-size: 12px;
+    padding:  0 10px;
+    border: 1px solid #dfdfdf;
+    border-bottom: 0 solid #dfdfdf;
+}
+
+header>div>nav>.lang>h2:hover{
+    background-color: #f2f2f2;
+}
+
+header>div>nav>.lang>h2:before{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 6px;
+    height: 4px;
+    background-image: url(./../images/spritePC200706.png);
+    background-position: -897px 0;
+    content: '';
+}
+
+header>div>nav>.lang>h2>a{
+    display: block;
+    width: 130px;
+    font-weight: 400;
+}
+
+header>div>nav>.lang>ul{
+    width: 150px;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+}
+
+
+header>div>nav>.lang>ul>li>a{
+    display: block;
+    margin: 4px 10px;
+}
+
+header>div>nav>.lang>ul>li.on>a,
+header>div>nav>.lang>ul>li>a:hover{
+    color: #00c402;
+    font-weight: 600;
+}
+/*////////////////////////*/
+
+section{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+}
+section>.slide-banner{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 2700px;
+}
+section>.slide-banner>li{
+    position: relative;
+    height: 440px;
+    background-repeat: no-repeat;
+}
+section>.slide-banner>li>h3{
+    width: 2700px;
+    text-indent: -9999px;
+}
+section>.slide-banner>li:nth-of-type(1){
+    background-image: url(./../images/Korean0906.png);
+}
+section>.slide-banner>li:nth-of-type(2){
+    background-image: url(./../images/PC_Game_rangers_ko_12333.png);
+}
+section>.slide-banner>li:nth-of-type(3){
+    background-image: url(./../images/PC_Game_Play_kr_123123.png);
+}
+section>.slide-banner>li:nth-of-type(4){
+    background-image: url(./../images/PC_LINE_Store_ko.png);
+}
+
+section>.slide-banner>li>span{
+    display: block;
+    position: absolute;;
+    left: 868px;
+    bottom: 92px;
+    height: 38px;
+    margin: 0 auto;
+}
+
+section>.slide-banner>li:nth-of-type(1)>span{
+    bottom: 114px;
+}
+section>.slide-banner>li>span>a{
+    display: inline-block;
+    bottom: 112px;
+    width: 115px;
+    height: 38px;
+    margin-right: 8px;
+    text-indent: -9999px;
+    /* border: 1px solid #000; */
+}
+section>.slide-banner>li:nth-of-type(1)>span>a{
+    width: 96px;
+}
+section>.slide-banner>li:nth-of-type(4)>span>a{
+    width: 140px;
+}
+
+section>.indicator{
+    display: flex;
+    position: absolute;
+    top: 410px;
+}
+section>.indicator>li>a{
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0 11px;
+    text-indent: -9999px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+section>.indicator>li.on>a{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+section>.info{
+    width: 960px;
+    margin-top: 88px;
+}
+section>.info>li{
+    display: flex;
+    margin-bottom: 80px;
+}
+section>.info>li:nth-of-type(even){
+    justify-content: space-between;
+}
+section>.info>li:nth-of-type(even)>p{
+  order: 200;
+}
+section>.info>li:nth-of-type(3)>p>img{
+    margin-left: -148px;
+}
+section>.info>li>.info-ct{
+    margin: 47px 60px 0;
+}
+section>.info>li:nth-of-type(even)>.info-ct{
+    margin: 47px 0px 0;
+}
+section>.info>li>.info-ct>.tit{
+    margin: 0 0 15px -5px;
+    line-height: 1.1;
+    font-weight: 400;
+    font-size: 54px;
+}
+section>.info>li>.info-ct>p{
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+section>.info>li>.info-fn{
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin-bottom: 30px;
+}
+section>.info>li>.info-fn>li{
+    width: 320px;
+    margin-bottom: 30px;
+
+}
+section>.info>li>.info-fn>li>p{
+    width: 320px;
+}
+section>.info>li>.info-fn>li>h3{
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+section>.info>li>.info-fn>li>h3+p{
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+
+/*///////////////////////////////////////*/
+
+footer{
+    padding: 30px 0;
+    color: #838383;
+    background-color: #3b3b3b;
+}
+footer>div{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 960px;
+    height: 105px;
+    margin: 0 auto;
+}
+footer>div>ul{
+    display: flex;
+}
+footer>div>ul>li:before{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin: 0 10px;
+    background-color: #494949;
+    content: '';
+}
+
+footer>div>ul>li>a:nth-of-type(1){
+    color: #838383;
+    font-size: 12px;
+}
+footer>div>ul:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    width: 82px;
+    height: 30px;
+}
+footer>div>ul>li:nth-of-type(1):before,
+footer>div>ul:nth-of-type(2)>li:before{
+    display: none;
+}
+footer>div>ul:nth-of-type(2)>li>a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background-image: url(./../images/spritePC200706.png);
+    background-position: -1049px 0;
+    /* border: 1px solid #000; */
+}
+
+footer>div>ul:nth-of-type(2)>li:nth-of-type(2)>a{
+    background-position: -817px 0;;
+}
+footer>div>address>span{
+    margin-left: 5px;
+    font-weight: 600;
+}
